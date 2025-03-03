@@ -1,0 +1,75 @@
+/* Apply styles to the body to ensure the background color takes up the entire page */
+body {
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    padding: 48px; /* Reduced by 2px */
+    background-image: url("images/rivalsbackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0; /* Remove any default margin to ensure the color covers the whole page */
+    height: 100vh; /* Set the height to 100% of the viewport */
+    color: #fcd92d;
+    text-shadow: 1px 1px 10px #000000;
+    background-attachment: fixed; /* Fix background on scroll */
+}
+
+/* Image container settings */
+#image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack image and text vertically */
+    height: auto; /* Adjust height as needed */
+    margin-top: 18px; /* Reduced by 2px */
+}
+
+/* Image styling */
+#character-image, #placeholder-image {
+    display: none;
+    max-width: 80%; /* Adjust this percentage to make it smaller or larger */
+    height: auto;
+    margin-top: -1px; /* Reduced by 2px */
+}
+
+#placeholder-image {
+    display: block;
+}
+
+/* Styling for the h1 */
+h1 {
+    color: #fcd92d;
+    margin-bottom: 18px; /* Reduced by 2px */
+}
+
+/* Styling for paragraphs */
+p {
+   display: none;
+}
+
+/* Button styling */
+button {
+    padding: 12px 24px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    border: 2px solid #fcd92d;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 18px; /* Reduced by 2px */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover state for buttons */
+button:hover {
+    background-color: #fcd92d;
+}
+
+/* Optional: Add spacing around buttons */
+#buttons {
+    margin-top: 28px; /* Reduced by 2px */
+}
