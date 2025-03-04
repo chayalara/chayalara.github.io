@@ -1,5 +1,5 @@
 /* Apply styles to the body to ensure the background color takes up the entire page */
-body {
+#project {
     font-family: "Bebas Neue", sans-serif;
     text-align: center;
     font-size: 32px;
@@ -14,6 +14,79 @@ body {
     color: #fcd92d;
     text-shadow: 1px 1px 10px #000000;
     background-attachment: fixed; /* Fix background on scroll */
+    position: relative;
+    overflow: hidden; /* Prevents any unintended scroll-related issues */
+}
+
+/* Ensure cross-browser compatibility for background attachment */
+@media (max-width: 768px) {
+    #randomizer {
+        background-attachment: scroll; /* For mobile devices, ensure scroll behavior */
+    }
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #212121; /* Dark background */
+    padding: 10px 0; /* Reduced padding to make the bar thinner */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px; /* Reduced margin for tighter spacing */
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px; /* Slightly smaller font size */
+    font-weight: 700;
+    text-decoration: none;
+    padding: 8px 16px; /* Reduced padding for a thinner look */
+    border-radius: 5px;
+    position: relative;
+    transition: all 0.3s ease;
+    font-family: Arial, sans-serif; /* Apply Arial font */
+}
+
+nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    list-style: none;
+    top: 40px;
+    left: 0;
+    border-radius: 5px;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+nav ul li .dropdown li {
+    margin: 5px 0;
+}
+
+nav ul li .dropdown li a {
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    text-decoration: none;
 }
 
 /* Image container settings */

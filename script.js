@@ -36,7 +36,8 @@ function showRandomDuelist() {
         { src: "images/mrfantastic.jpg", caption: "Mister Fantastic" },
         { src: "images/moonknight.jpg", caption: "Moon Knight" },
         { src: "images/namor.jpg", caption: "Namor" },
-        { src: "images/psylock.jpg", caption: "Psylock" },
+        { src: "images/psylock.jpg", caption: "Psylocke" },
+        { src: "images/wanda.jpg", caption: "Scarlet Witch" }, // Added Scarlet Witch
         { src: "images/spiderman.jpg", caption: "Spider-Man" },
         { src: "images/squirrelgirl.jpg", caption: "Squirrel Girl" },
         { src: "images/starlord.jpg", caption: "Star-Lord" },
@@ -67,7 +68,7 @@ function showRandomStrategist() {
         { src: "images/loki.jpg", caption: "Loki" },
         { src: "images/luna.jpg", caption: "Luna Snow" },
         { src: "images/mantis.jpg", caption: "Mantis" },
-        { src: "images/rocket.jpg", caption: "Rocket Racoon" }
+        { src: "images/rocket.jpg", caption: "Rocket Raccoon" }
     ];
 
     const randomStrategist = strategists[Math.floor(Math.random() * strategists.length)];
@@ -105,7 +106,8 @@ function showRandomAll() {
         { src: "images/mrfantastic.jpg", caption: "Mister Fantastic" },
         { src: "images/moonknight.jpg", caption: "Moon Knight" },
         { src: "images/namor.jpg", caption: "Namor" },
-        { src: "images/psylock.jpg", caption: "Psylock" },
+        { src: "images/psylock.jpg", caption: "Psylocke" },
+        { src: "images/wanda.jpg", caption: "Scarlet Witch" }, // Added Scarlet Witch
         { src: "images/spiderman.jpg", caption: "Spider-Man" },
         { src: "images/squirrelgirl.jpg", caption: "Squirrel Girl" },
         { src: "images/starlord.jpg", caption: "Star-Lord" },
@@ -120,7 +122,7 @@ function showRandomAll() {
         { src: "images/loki.jpg", caption: "Loki" },
         { src: "images/luna.jpg", caption: "Luna Snow" },
         { src: "images/mantis.jpg", caption: "Mantis" },
-        { src: "images/rocket.jpg", caption: "Rocket Racoon" }
+        { src: "images/rocket.jpg", caption: "Rocket Raccoon" }
     ];
 
     const randomCharacter = allCharacters[Math.floor(Math.random() * allCharacters.length)];

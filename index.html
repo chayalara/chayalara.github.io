@@ -3,25 +3,274 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marvel Rivals Hero Randomizer</title>
+    <title></title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>Hero Randomizer</h1>
-    <!-- Placeholder image that will be replaced by character images -->
-    <div id="image-container">
-        <img id="placeholder-image" src="images/marvelrivals.png" alt="Marvel Rivals">
-        <img id="character-image" src="" alt="">
-        <p id="character-caption"></p>
+<body id="homepage">
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="#">Projects</a>
+                <ul class="dropdown">
+                    <li><a href="randomizer.html">Rivals Randomizer</a></li>
+                    <li><a href="heroquiz.html">Rivals Hero Quiz</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div id="title">
+        <h1>Hero Randomizer</h1>
     </div>
-    <div id="buttons">
-        <button onclick="showRandomVanguard()">Vanguard</button>
-        <button onclick="showRandomDuelist()">Duelist</button>
-        <button onclick="showRandomStrategist()">Strategist</button>
-        <br>
-        <button onclick="showRandomAll()">All Characters</button>
-    </div>
-    <script src="script.js"></script>
 </body>
 </html>
+
+<!-- 1- What is your preferred playstyle?
+
+Attack first, ask questions later. 1 2 4 7 9 10 14 15 17 21 23 29
+Defend and wait for the perfect moment to strike. 5 6 8 13 16 18 20 22 24 25 26 27 28 
+I like to outsmart my opponent with strategy. 3 11 12 19 30 31 32 33 34 35 36 37
+
+2- Which power type appeals to you the most?
+
+Speed and agility. 10 13 14 15 19 21 23 24 26 29 31 33 35 
+Power and strength. 1 2 3 4 5 7 8 9 17 20 22  28  
+Intelligence and gadgets. 6 11 12 16 18 25 27 30 32 34 36 37
+
+5- How do you feel about playing defensively?
+
+I prefer offense, but I can defend when needed. 1 2 7 8 9 10 13 14 15 17 19 20 21 22 23 25 26 28 29 
+I'm all about defense; I'll wait for the right time to strike. 3 4 5 30 31 32 33 34 35 36 37
+I adapt my defense based on the situation. 6 11 12 16 18 24 27 
+
+6- What role do you see yourself playing in a team?
+
+The main damage dealer. 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 
+The tactician or controller. 30 31 32 33 34 35 36 37
+The protector, taking hits for others. 1 2 3 4 5 6 7 8 9 
+
+7- Which type of powers would you prefer to have?
+
+Super strength or immense physical power. 1 2 4 7 8 9 10 15 29  
+Speed, agility, or magic. 3 5 13 14 17 18 19 20 21 22 24 26 30 31 32 33 34 35 36 
+Intelligence, gadgets, or manipulation of technology. 6 11 12 16 23 25 27 28 37
+
+8- How important is range to you in battle?
+
+I prefer to get up close and personal with my opponent. 
+I like to have both close and ranged options.
+I rely on long-range attacks and outsmarting my opponent.
+
+9- Would you rather have a wide variety of moves or a few powerful ones?
+
+A few powerful moves to take down enemies quickly.
+A balanced mix of versatility and power.
+A wide variety of moves to keep my enemies guessing.
+
+10- What is your strategy when facing an opponent?
+
+Overwhelm them before they can react.
+Wear them down with patience and precision.
+Trick and outwit them with traps and attacks.
+
+11- When facing multiple enemies, how would you approach it?
+
+Take out the strongest opponent first.
+Focus on defense and counterattacks until I find an opening.
+Outsmart them by creating confusion and exploiting their weaknesses.
+
+12- Do you prefer solo combat or teamwork?
+
+Solo combat – I can handle it myself.
+Teamwork – I work best with others.
+A mix of both, depending on the situation.
+
+13- Which aesthetic do you prefer for your character's design?
+
+Bold, intimidating, and muscular.
+Sleek, agile, and stealthy.
+High-tech, smart, and resourceful.
+
+14- Do you prefer a hero with a dark or light personality?
+
+I'm drawn to heroes with dark, mysterious personas.
+I like the idea of a balanced hero with a mix of light and dark traits.
+I prefer heroes who are optimistic and light-hearted.
+
+15- Would you prefer to play a hero who...
+
+Has a clear, strong moral code and fights for justice.
+Navigates the gray areas and deals with complex situations.
+Uses their intellect or cunning to outsmart the system.
+
+16- How challenging do you want your hero to be to play?
+
+I want a hero that's straightforward and powerful.
+I enjoy a hero with a balanced difficulty but strong potential.
+I want a hero who requires some thought and skill to master.
+
+17- How do you prefer to handle an opponent who's stronger than you?
+
+Take them head-on and outmuscle them.
+Wait for the right opportunity to strike at their weakness.
+Use strategy and outthink them, finding a way to beat them without brute force.-->
+
+<!--Vanguards
+1- Bruce Banner / Hulk
+
+Personality: Reserved, intelligent, compassionate, struggles with anger.
+Playstyle: Aggressive tank with high durability and strong AoE (Area of Effect) attacks. Prefers taking damage and dishing it out in return.
+
+2- Captain America
+
+Personality: Honorable, leadership-driven, brave, self-sacrificial.
+Playstyle: Balanced, defensive tank. Strong on the frontlines, with an emphasis on protecting allies and controlling the battlefield with shields.
+
+3- Doctor Strange
+
+Personality: Confident, wise, mystical, strategic.
+Playstyle: Supportive character with crowd control and magic-based abilities. Primarily focused on manipulating the battlefield and assisting teammates.
+
+4- Groot
+
+Personality: Loyal, protective, simple, quiet.
+Playstyle: Defensive with strong healing and control abilities. Often acts as a support, healing or protecting teammates.
+
+5- Magneto
+
+Personality: Confident, determined, commanding, sometimes ruthless.
+Playstyle: Offensive with control and crowd control abilities. Uses magnetism to manipulate the environment and restrict enemies’ movements.
+
+6- Peni Parker
+
+Personality: Determined, tech-savvy, optimistic, empathetic.
+Playstyle: Agile and tech-based. Focuses on quick attacks and using her suit to control enemies with gadgets.
+
+7- The Thing
+
+Personality: Gruff, loyal, tough, humorous.
+Playstyle: Tank with high health and damage resistance. Focuses on absorbing damage and dealing heavy physical attacks.
+
+8- Thor
+
+Personality: Noble, godly, brave, proud.
+Playstyle: Offensive powerhouse with elemental (lightning) attacks. High burst damage and excellent at dealing with multiple enemies at once.
+
+9- Venom
+
+Personality: Aggressive, determined, chaotic, protective of Eddie Brock.
+Playstyle: Offensive and defensive hybrid with both strong physical attacks and an ability to heal from damage.
+
+10- Black Panther
+Personality: Calm, regal, strategic, protective.
+Playstyle: Agile with stealth, high mobility, and exceptional melee combat. Strong at picking off enemies and using the environment to his advantage.
+
+11- Black Widow
+Personality: Intelligent, stealthy, determined, resourceful.
+Playstyle: Agile, quick, and stealthy. Relies on high-speed attacks, traps, and evasion. Focuses on outmaneuvering opponents.
+
+12- Hawkeye
+Personality: Sarcastic, loyal, skilled marksman.
+Playstyle: Ranged fighter with great precision. Uses arrows to deal damage from afar and control the battlefield with traps.
+
+13- Hela
+Personality: Fierce, calculating, ruthless, regal.
+Playstyle: Offensive with strong abilities to summon undead minions and control the battlefield with darkness-based powers.
+
+14- Human Torch
+Personality: Brash, cocky, quick-witted, passionate.
+Playstyle: Offensive, fire-based attacks. Focuses on area damage, mobility, and spreading destruction to enemies.
+
+15- Iron Fist
+Personality: Calm, disciplined, spiritually centered, focused.
+Playstyle: Melee-focused duelist with high damage output and powerful combo abilities. Specializes in close-range combat with martial arts and energy attacks.
+
+16- Iron Man
+Personality: Brilliant, confident, tech-savvy, sometimes arrogant.
+Playstyle: Ranged combat specialist with high-tech gadgetry and explosive weapons. Focuses on dealing massive damage from a distance with his arsenal of tech.
+
+17- Magik
+Personality: Conflicted, determined, a bit cold, loyal.
+Playstyle: Magic-based duelist with the ability to teleport and summon demons. Great at keeping enemies off balance and causing chaos.
+
+18- Mister Fantastic
+Personality: Inquisitive, brilliant, slightly introverted, loyal.
+Playstyle: Utility-based fighter with the ability to stretch his body and manipulate his form. Excellent for controlling space and blocking opponents.
+
+19- Moon Knight
+Personality: Unpredictable, intense, conflicted, determined.
+Playstyle: Agile with a mix of close-range and ranged combat. Focuses on hit-and-run tactics and using his various weapons in creative ways.
+
+20- Namor
+Personality: Proud, hot-headed, loyal, passionate.
+Playstyle: Balanced duelist with water-based powers. Can both attack with ranged water abilities and use physical strength for close combat.
+
+21- Psylocke
+Personality: Focused, fierce, intelligent, tactical.
+Playstyle: Agile fighter with psychic blades and mind-based abilities. Specializes in slicing through opponents and controlling their movements.
+
+22- Scarlet Witch
+Personality: Conflicted, emotional, determined, powerful.
+Playstyle: Magic-based duelist with the ability to manipulate reality itself. Focuses on controlling enemies and dealing devastating area damage.
+
+23- Spider-Man
+Personality: Friendly, witty, resilient, self-sacrificing.
+Playstyle: Agile and quick, specializing in mobility and web-based attacks. Can attack from a distance or close range with a variety of traps and tools.
+
+24- Squirrel Girl
+Personality: Optimistic, fun-loving, quirky, resilient.
+Playstyle: Unique duelist that uses swarming tactics with her squirrel army. Great at overwhelming opponents with sheer numbers.
+
+25- Star-Lord
+Personality: Witty, resourceful, confident, impulsive.
+Playstyle: Ranged duelist using gadgets and guns, with the ability to control enemies with clever traps and distractions.
+
+26- Storm
+Personality: Calm, regal, nurturing, determined.
+Playstyle: Elemental-based duelist with control over the weather. Focuses on using wind, lightning, and storms to incapacitate enemies.
+
+27- The Punisher
+Personality: Brutal, vengeful, stoic, relentless.
+Playstyle: Offensive duelist with heavy weaponry and strong gunplay. Focuses on aggressive, no-nonsense combat.
+
+28- Winter Soldier
+Personality: Stoic, conflicted, loyal, focused.
+Playstyle: Ranged duelist with a combination of gunplay and hand-to-hand combat. Specializes in precision strikes and quick hits.
+
+29- Wolverine
+Personality: Gruff, tough, loyal, quick-tempered.
+Playstyle: Melee-focused duelist with healing abilities and powerful claws. Great at close combat with high durability.
+Strategists
+
+30- Adam Warlock
+Personality: Wise, philosophical, stoic, powerful.
+Playstyle: Supportive strategist with high-energy attacks and manipulation powers. Focuses on controlling the flow of the game and assisting allies.
+
+31- Cloak & Dagger
+Personality: Dark, mysterious, protective, empathetic.
+Playstyle: Dual combatants with light and dark powers. Focuses on stealth, healing, and supporting teammates with their combined abilities.
+
+32- Invisible Woman
+Personality: Intelligent, strong-willed, compassionate, protective.
+Playstyle: Defensive strategist with the ability to turn invisible and create force fields. Excels in protecting allies and controlling enemy movements.
+
+33- Jeff the Land Shark
+Personality: Playful, fun, loyal, unpredictable.
+Playstyle: Unique strategist with the ability to disrupt enemies and create chaos with his attacks. A wild card character.
+
+34- Loki
+Personality: Mischievous, cunning, manipulative, ambitious.
+Playstyle: Trickster with illusion-based powers. Focuses on deceiving enemies and controlling the battlefield with illusions and misdirection.
+
+35- Luna Snow
+Personality: Determined, compassionate, strong, principled.
+Playstyle: Elemental strategist with ice-based powers. Great for freezing enemies and slowing down opponents.
+
+36- Mantis
+Personality: Calm, empathetic, nurturing, spiritual.
+Playstyle: Supportive strategist with abilities focused on healing, mind control, and manipulation.
+
+37- Rocket Raccoon
+Personality: Quick-witted, aggressive, resourceful, sarcastic.
+Playstyle: Ranged strategist with gadgets and explosives. Excels at disrupting enemy strategies and providing heavy artillery support.-->
